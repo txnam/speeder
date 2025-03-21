@@ -49,6 +49,8 @@ int main() {
                 << std::setw(19) << m1 << " | "
                 << std::setw(19) << s / (r + 1) << " | " << r + 1 << std::endl;
     }
+    
+    logFile << std::endl;
     logFile.close();
 
     std::ofstream fineTestFile("finetest.py", std::ios::app);

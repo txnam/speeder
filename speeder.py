@@ -29,4 +29,6 @@ for r in range(CNT):
 
     log(f'{m0:19.15f} | {m1:19.15f} | {s/(r+1):19.15f} | {r+1}')
 
+L.write('\n')
+
 open('finetest.py', 'a').write(f'SCALE = {(s-m0-m1) / (CNT-2) * 100}\n')
